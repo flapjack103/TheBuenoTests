@@ -1,0 +1,16 @@
+{
+  "name": "sortingAlgorithms",
+  "version": "0.0.0",
+  "description": "Testing some sorting algorithms.",
+  "main": "main.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "Alexandra Grant <alexandrag103@gmail.com>",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
