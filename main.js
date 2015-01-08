@@ -1,4 +1,4 @@
-var sortingAlgorithms = require('./sortingAlgorithms');
+/*var sortingAlgorithms = require('./sortingAlgorithms');
 
 var unsortedArray = [38,27,43,3,9,82,10];
 console.log('Unsorted', unsortedArray);
@@ -8,4 +8,15 @@ for(func in sortingAlgorithms) {
 	unsortedArray = [38,27,43,3,9,82,10];
 	console.log(func);
 	console.log(sortingAlgorithms[func](unsortedArray));
-}
+}*/
+
+var LinkedList = require('./linkedList')
+
+var list = new LinkedList();
+list.add('cat');
+list.add('dog');
+list.add('fish');
+list.insertAfter('dog', 'bird');
+list.insertAfter('fish', 'iguana');
+list.print();
+
