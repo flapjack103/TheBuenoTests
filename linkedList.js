@@ -58,6 +58,30 @@ LinkedList.prototype.insertAfter = function(marker, newData) {
 	}
 }
 
+// Reverse the SLL
+LinkedList.prototype.reverse = function() {
+	var curr = this.start;
+	var prev = null;
+
+	while(curr !== null) {
+
+		var tmpNext = curr.next;
+		if(prev){
+			curr.next = prev;
+		}
+		else {
+			this.end = curr;
+			curr.next = null;
+		}
+		prev = curr;
+		curr = tmpNext;
+	}
+	// Set our start to the last node
+	this.end = this.start;
+	this.start = prev;
+
+}
+
 function createNode(data) {
 	return {data:data, next:null};
 }
